@@ -23,6 +23,7 @@ header {
     position: fixed;
     z-index: 2;
     background-color: #fff;
+    overflow-x: hidden;
     /* position: absolute; */
 }
 
@@ -67,10 +68,11 @@ header {
 
 header form {
     display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
 header form input {
-    width: 580px;
     height: 30px;
     border: 1px solid #ccc;
     border-right: none;
@@ -217,7 +219,7 @@ header form button {
 }
 
 .categories-section .scroll-x {
-    position: absolute;
+    position: fixed;
     right: 0px;
     background: linear-gradient(90deg, #00000000, #fff, #fff, #fff);
     padding-top: 0.4rem;
@@ -342,9 +344,9 @@ header form button {
 
 /* media */
 
-@media (max-width: 700px) {
+@media (max-width: 610px) {
     header form {
-        margin-left: 40px;
+        /* margin-left: 40px; */
     }
     header form input {
         display: none;
@@ -354,15 +356,40 @@ header form button {
         border: none;
         order: 2;
         padding: 0 2px;
+        width: 20px;
         margin-right: 0px;
     }
     .header-mic {
-        margin-left: 10px;
+        margin-left: 8px;
+        height: 20px;
     }
     .header-logo {
         margin-left: 5px;
     }
     .user-menus {
-        width: 150px;
+        width: 100px;
+        margin-right: 8px;
+    }
+    .side-navbar {
+        display: none;
+    }
+    .categories {
+        margin-left: 0;
+    }
+    .videos {
+        margin-left: 0;
+    }
+    .hamburger-a {
+        width: 28px;
+        margin: 0 7px;
+    }
+    .header-logo-img {
+        height: 18px;
+    }
+    .header-logo {
+        margin-left: 10px;
+    }
+    .logo-cont span {
+        font-size: 0.8rem;
     }
 }
